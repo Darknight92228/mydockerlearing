@@ -1,0 +1,8 @@
+ARG image=alpine:3.9.3
+
+FROM $image
+LABEL maintainer="Collabnix"
+
+ARG welcome_user=ME
+RUN echo "welcom $welcome_user, to docker world !" > message.txt
+CMD cat message.txt

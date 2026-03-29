@@ -1,0 +1,9 @@
+##working dir with absolut path
+
+FROM alpine:3.9.3
+LABEL maintainer="Collabnix"
+
+WORKDIR /opt/folder1
+RUN echo "Welcome to podman labs" > opt.txt
+
+WORKDIR /var/tmp
